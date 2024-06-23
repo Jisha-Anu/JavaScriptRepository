@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object constructor </title>
+
+    </head>
+    <body>
+        <script>
+            
+            var emp1 = new Employee(10101,"Seetha","Shah","Developer")
+            var emp2 = new Employee(10102,"jisha","anoop","app dev")
+            function Employee(empid1,fname1,lname1,designation1)
+            {
+                this.empid = empid1;
+                this.fname = fname1;
+                this.lname = lname1;
+                this.designation = designation1;
+
+            }
+            document.write("<p>Employee ID :" + emp2.empid + "</p>");
+            document.write("<p>Employee Name :" +emp2.fname +" " + emp2.lname + "</p>");
+            document.write("<p>Employee Designation :" +emp2.designation + "</p>");
+;        </script>
+    </body>
+</html>

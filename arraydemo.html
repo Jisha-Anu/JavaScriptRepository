@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            document.write("<h1>Array Literal</h1>")
+            let cities = ["Delhi","Mumbai","Bangalore","Kolkata"]
+            document.write(cities +"<br/>")
+
+            //iterate over an array using for loop
+            document.write("<h3>iterate over an array using for of loop</h3>")
+
+            for(const value of cities){
+                document.write(value + "<br/>")
+            }
+        </script>
+        <script>
+            document.write("<h4>Array Object</h4>")
+            var colors = new Array()
+            colors[0] = "Red"
+            colors[1] = "Green"
+            colors[2] = "Blue"
+            //iterate over an array using for loop
+            for(const element of colors){
+                document.write(element + "<br/>")
+            }
+        </script>
+        <script>
+            document.write("<h4>Array Constructor</h4>")
+            var techSkills = new Array("Java", "HTML", "Javascript", "Angular", "MySQL")
+        
+            //iterate over an array using for loop
+            for(var i=0; i<techSkills.length; i++){
+                document.write(techSkills[i] + "<br/>")
+            }
+        </script>
+    </body>
+</html>

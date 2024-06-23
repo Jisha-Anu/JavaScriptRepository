@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            
+        </title>
+        <style>
+            form{
+                padding: 12px;
+                font-size: 20px;
+                margin: 22px;
+                position: relative;
+                text-align:center;
+                
+            }
+        </style>
+        <script>
+            function showMsg(name1){
+                alert(name1)
+                
+                
+            }
+            function squarecalc(number1){
+                var squareof = number1 * number1;
+                document.write("The square of the number is:"+squareof)
+                document.write("The sum of the numbers is:"+ add(10,20))
+            }
+            function add(num1,num2){
+                var sum =num1 + num2;
+                
+                return sum
+            }
+        </script>
+    </head>
+    <body>
+        <form >
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name"/>
+            <input type="button" name="click"   value="click" onclick="showMsg(document.getElementById('name').value)"/>
+            <br/>
+            <br/>
+            <label for="square">Insert the number: </label>
+            <input type="text" name="square" id="square"/>
+            <input type="button" value="calculate" onclick="squarecalc(document.getElementById('square').value)"/>
+            <script>
+                var subtract = new Function("num3","num4","return num3-num4")
+                document.write(subtract(40,30))
+            </script>
+            <script>
+                var calcpower = new Function("num1","num2","document.write(Math.pow(num1,num2))")
+                calcpower(4,2)
+            </script>
+
+
+        </form>
+        
+    </body>
+</html>

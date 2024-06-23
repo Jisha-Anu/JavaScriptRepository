@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form{
+                padding: 12px;
+                font-size: 20px;
+                margin: 22px;
+                position: relative;
+                text-align: center;
+                
+            }
+        </style>
+        <script>
+            function CreateUser(){
+                
+                let fname=document.getElementById("f_name").value;
+                let lname=document.getElementById("l_name").value;
+                
+
+                function Newuser(fname,lname){
+                    
+                     this.f_name = fname
+                    this.l_name = lname
+                     return {f_name,l_name}
+
+                    }
+        
+                var user = Newuser(fname,lname)
+                document.write("<h3>User object created</h3>")
+                 document.write("<p>"+user.f_name+"</p>")
+                document.write("<br/>")
+                document.write(user.l_name)
+                }
+            
+             </script>
+       
+       
+
+    </head>
+    <body>
+        <h1 >Employee Details</h1>
+        <form>
+            <label for="f_name">First Name:</label>
+            <input type="text" id="f_name" name="fname"/><br/><br/>
+            <label for="l_name">Last Name:</label>
+            <input type="text" id="l_name" name="lname"/><br/><br/>
+           
+            <input type="button" id="submit" value="Submit" onclick="CreateUser()"/>
+            
+
+        </form>
+    </body>
+</html>

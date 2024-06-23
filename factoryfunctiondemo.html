@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <document class="write">Factory Function Exampl 1</document>
+        <br/>
+        <script>
+            var student={
+                studentname:"Geeta",
+                standard : 10,
+                getstudentinfo:function(){
+                    return this.studentname+" "+this.standard
+                }
+            }
+            
+           
+            document.write(student.getstudentinfo())
+
+        </script>
+        <br/>
+        <br/>
+        <br/>
+
+<document class="write">Factory Function Exampl 2</document>
+<br/>
+<script>
+       function studentinfo(){
+        this.studentname="Seeta";
+                this.standard = 11;
+                this.info=function(){
+                    return (this.studentname+" "+this.standard)
+
+                }
+            
+        }
+        var student1=new studentinfo()
+       document.write(student1.info())
+
+</script>
+<br/>
+<br/>
+<br/>
+<document class="write">Factory Function Exampl 3</document>
+<br/>
+<script>
+       var getstudentdet={
+                studentname:"Ahaan",
+                standard : 1,
+                getinfo:function(){
+                    return this.studentname+" "+this.standard
+                },
+                getobjt(){
+                    return this
+                }
+            }
+            var stud = getstudentdet.getobjt()
+           
+            document.write(stud.studentname+"  "+stud.standard)
+
+</script>
+    </body>
+</html>

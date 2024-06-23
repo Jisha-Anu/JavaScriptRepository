@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Global variable</title>
+        <script>
+            // global variable
+            var data = 100;
+
+            function add()
+            {
+                // local variables
+                var num1 = 10
+                var num2 = 20
+                var result = num1 + num2
+                document.write("Result is  " + result + "<br/>");
+                
+                
+                document.write("<br/> Global variable data =" + data)
+            }
+            function subtract()
+            {
+                document.write("result" + data)
+
+            }
+        </script>
+    </head>
+    <body>
+    
+        <form>
+            <input type="button" value="Add" onclick="add()"/><br/><br/>
+            <input type="button" value="Subatract" onclick="subtract()"
+        </form>
+    </body>
+</html>
